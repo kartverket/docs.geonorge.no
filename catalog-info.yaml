@@ -1,0 +1,37 @@
+# nonk8s
+apiVersion: "backstage.io/v1alpha1"
+kind: "Component"
+metadata:
+  name: "docs.geonorge.no"
+  tags:
+  - "public"
+spec:
+  type: "documentation"
+  lifecycle: "production"
+  owner: "land"
+---
+apiVersion: "backstage.io/v1alpha1"
+kind: "Group"
+metadata:
+  name: "security_champion_docs.geonorge.no"
+  title: "Security Champion docs.geonorge.no"
+spec:
+  type: "security_champion"
+  parent: "land_security_champions"
+  members:
+  - "henrik716"
+  children:
+  - "resource:docs.geonorge.no"
+---
+apiVersion: "backstage.io/v1alpha1"
+kind: "Resource"
+metadata:
+  name: "docs.geonorge.no"
+  links:
+  - url: "https://github.com/kartverket/docs.geonorge.no"
+    title: "docs.geonorge.no på GitHub"
+spec:
+  type: "repo"
+  owner: "security_champion_docs.geonorge.no"
+  dependencyOf:
+  - "component:docs.geonorge.no"
