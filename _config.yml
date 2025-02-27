@@ -1,8 +1,11 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Geonorge - docs
+description: Dokumentasjon for brukerne av Geonorge
 theme: just-the-docs
+logo: "/assets/img/geonorge-logo.png"
+favicon_ico: "/assets/img/favicon.ico"
+permalink: /:name/
 
-url: https://just-the-docs.github.io
+url: https://kartverket.github.io/docs.geonorge.no/
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+aux_links: 
+  Template Repository: https://github.com/kartverket/docs.geonorge.no
